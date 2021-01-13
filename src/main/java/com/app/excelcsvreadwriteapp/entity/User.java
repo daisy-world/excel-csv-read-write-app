@@ -8,6 +8,9 @@ public class User {
 	private String email;
 	
 	
+	public User() {
+		super();
+	}
 	public User(String firstName, String lastName, String address, String email) {
 		super();
 		this.firstName = firstName;

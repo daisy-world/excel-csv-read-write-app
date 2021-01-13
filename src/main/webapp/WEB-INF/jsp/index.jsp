@@ -5,6 +5,6 @@
 </head>
 <body class="container" style = "margin-top:20px;">
 	<h2>Download user report by clicking the button below</h2>
-	<a href="http://localhost:3000/download/user-report" class="btn btn-primary">Download</a>
+	<a href="http://localhost:3000/downloadCsv" class="btn btn-primary">Download</a>
 </body>
 </html>
