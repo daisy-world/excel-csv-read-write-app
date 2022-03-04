@@ -34,7 +34,7 @@ public class CsvController {
 	        ICsvBeanWriter csvWriter = new CsvBeanWriter(response.getWriter(),CsvPreference.STANDARD_PREFERENCE);
 	                
 	 
-	        String[]  headings = {"First Name","Last Name","Email","Address"};
+	        String[]  headings = {"firstName","lastName","email","address"};
 	        
 	        String[] pojoclassPropertyName = { "firstName", "lastName", "email", "address"};
 	              
@@ -70,30 +70,12 @@ public class CsvController {
     	return users;
 	}
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
+
 	@GetMapping("/readCsv")
 	
 	public @ResponseBody String readExcel() throws IOException {
 	
-		String path = "C://Users//lipsa//Downloads//user.csv" ;
+		String path = "C://Users//lipsha//Downloads//users.csv" ;
 
 		service.readDataFromCsv(path);
 
